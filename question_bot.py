@@ -2,14 +2,7 @@ import discord, random, asyncio
 from datetime import datetime
 from discord.ext import commands, tasks
 
-# TODO: Redo questions into text file to store
-# TODO: Split categories into cogs
-# https://www.youtube.com/watch?v=vQw8cFfZPx0
-# TODO: Instead of loop for every 24 hours make it be a stagnant time so you can start the code at any hour
-# https://github.com/stroupbslayen/Other-Discord-Bots-async/blob/master/scheduled-post/scheduled-message-post.py
-# TODO: Hangman
-# TODO: Daily announcements, in-houses
-# TODO:
+
 client = commands.Bot(command_prefix='%')
 TOKEN = 'NjY0MTg2NDI1MTYzMzgyNzg0.XhUdNQ.4u8QvaiM5aJ_slZvRPfmF4GNE50'
 questions = [
@@ -186,8 +179,6 @@ async def user_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send(f'**Error:** Enter in at least one summoner name')
 
-# Moved
-# TODO: Load in forms and be able to add in
 @client.command()
 async def info(ctx):
     message = '__Important documents containing information for Purple Caster Minions__\n'
