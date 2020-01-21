@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 
 
 client = commands.Bot(command_prefix='%')
-TOKEN = 'NjY0MTg2NDI1MTYzMzgyNzg0.XhUdNQ.4u8QvaiM5aJ_slZvRPfmF4GNE50'
+TOKEN = ''
 questions = [
     'What’s the best thing you’ve got going on in your life at the moment?',
     'What scene in a movie always gives you goosebumps every time you watch it?',
