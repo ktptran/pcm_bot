@@ -4,7 +4,7 @@ import os
 
 client = commands.Bot(command_prefix = '%')
 
-TOKEN = 'NjY0MTg2NDI1MTYzMzgyNzg0.XiYmkg.xqdTeqz_xWn4RsM7MAYCPjccVD4'
+TOKEN = 'TOKEN'
 
 '''
 Only administrators are able to program up new functions for the bot to

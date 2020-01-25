@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-# TODO: Forms, descriptions, and helpful into text file
+# Finished this one
 helpful = ['https://u.gg/', 'https://champion.gg/',
            'https://probuilds.net/', 'https://Leagueoflegends.com/',
            'https://lolking.net/', 'https://lolnexus.com/', 'https://proguides.com']
@@ -11,44 +11,61 @@ descriptions = ['Staff Application Form: ', 'TFT tryouts: January 17 @8pm',
                        'Community tryouts: January 18-19 @8pm',
                        'Workshop Registration January 13 4:30-6:00 PM']
 
-class links(commands.Cog):
+
+class Links(commands.Cog):
     def __init__(self, client):
         self.client = client
 
+    # Commands for when the cog is loaded.
     @commands.Cog.listener()
     async def on_ready(self):
         print('Commands for links are now loaded.')
 
+    # Prints out the op.gg or lolchess link for the inputted user or team.
+    # Inputs required:
+    #   gm = gamemode (either TFT or SR)
+    #   args = arguments inputted for summoner names
     @commands.command()
-    async def lolchess(self, ctx, args):
-        link = 'https://lolchess.gg/profile/na/'
-        link += args
-        await ctx.send(f'**Lolchess:** {link}')
-
-    @commands.command()
-    async def opgg(self, ctx, *, args):
-        link = 'https://na.op.gg/summoner/userName='
-        if args == 'PCM_Varsity_Team':
-            link = link + 'pascho%2CPlasticHoipolloi%2Ctachibanakanade%2Cmanabird%2Cdarquesse%2Cnattyp%2Chexsise%2Coshawatt%2Ctrendy%2Cyilililili\n'
-            link = link + '**Team 1:** <https://na.op.gg/multi/query=oshawatt%2Chexsise%2Cdarquesse%2Ctrendy%2Cyilililili>\n'
-            link = link + '**Team 2:** <https://na.op.gg/multi/query=pascho%2Cplastichoipolloi%2Ctachibanakanade%2Cmanabird%2Cnattyp>'
-        elif "," in args:
-            ign = args.split(', ')
-            for i in range(len(ign)):
-                ign[i] = ign[i].replace(' ', '_')
-                link += ign[i] + '%2C'
-            link = link[:-3]
+    async def lol_info(self, ctx, gm, *, args):
+        if gm.lower() == 'sr':
+            if args == 'PCM_Teams':
+                link = '\n**PCM Teams:**\n__Varsity Team__\n*Full Team:* https://na.op.gg/summoner/userName='
+                link = link + 'pascho%2CPlasticHoipolloi%2Ctachibanakanade%2Cmanabird%2Cdarquesse%2Cnattyp%2Chexsise%2'
+                link = link + 'Coshawatt%2Ctrendy%2Cyilililili\n*Team 1:* <https://na.op.gg/multi/query=oshawatt%'
+                link = link + '2Chexsise%2Cdarquesse%2Ctrendy%2Cyilililili>\n*Team 2:* <https://na.op.gg/multi/'
+                link = link + 'query=pascho%2Cplastichoipolloi%2Ctachibanakanade%2Cmanabird%2Cnattyp>\n\n'
+                link = link + '__Cloud Team__\n<https://na.op.gg/multi/query=n%C3%B8timportant%2Cbungy%2Cwiggywonka%'
+                link = link + '2Cmighty93%2Cchetgeezus%2Clostpath>'
+            elif "," in args:
+                link = 'https://na.op.gg/summoner/userName='
+                ign = args.split(', ')
+                for i in range(len(ign)):
+                    ign[i] = ign[i].replace(' ', '_')
+                    link += ign[i] + '%2C'
+                link = link[:-3]
+            else:
+                link = 'https://na.op.gg/summoner/userName='
+                args = args.replace(' ', '_')
+                link = link + args
+            await ctx.send(f'**OP.GG:** {link}')
+        elif gm.lower() == 'tft':
+            link = 'https://lolchess.gg/profile/na/'
+            link += args
+            print('Should send link')
+            await ctx.send(f'**Lolchess:** {link}')
         else:
-            args = args.replace(' ', '_')
-            link = link + args
-        await ctx.send(f'**OP.GG:** {link}')
+            await ctx.send('You must enter \'%lol_info {tft/sr} {player name(s)}\'')
 
-    @lolchess.error
-    @opgg.error
+    # Errors for when there is a missing required argument.
+    # Errors:
+    #   MissingRequiredArgument = not enough inputs entered
+    @lol_info.error
     async def user_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send(f'**Error:** Enter in at least one summoner name')
 
+    # Finished moving
+    # Prints out info about the club and other important documents for the members.
     @commands.command()
     async def info(self, ctx):
         # This part is stagnant and always stays consistent.
@@ -70,6 +87,8 @@ class links(commands.Cog):
             message += f'{i}. **{descriptions[i]}** - <{forms[i]}>\n'
         await ctx.send(message)
 
+
+    # Completed added to QuestFile
     @commands.command()
     @commands.has_permissions(administrator=True)
     async def add_link(self, ctx, form, *, description):
@@ -80,6 +99,7 @@ class links(commands.Cog):
         else:
             await ctx.send('**Error:** You did not input a link followed by a description. Please try again.')
 
+    # TODO: Combine this with the remove function in QuestFile.py
     @commands.command()
     @commands.has_permissions(administrator=True)
     async def remove_link(self, ctx, link: int):
@@ -101,6 +121,8 @@ class links(commands.Cog):
         else:
             print(error)
 
+    # Finished
+    # Prints out helpful links for League analytics to help with game knowledge.
     @commands.command()
     async def climb(self, ctx):
         links1 = 'Helpful links for you to climb!\n0. <'
@@ -109,9 +131,9 @@ class links(commands.Cog):
         links1 = links1[:-5]
         await ctx.send(links1)
 
+    # Finished added to QuestFile
     @commands.command()
     @commands.has_permissions(administrator=True)
-    # @commands.has_permission(manage_messages=True)
     async def climb_add(self, ctx, *, arg):
         if arg.endswith('/') and arg.beginswith('https://'):
             helpful.append(arg)
@@ -121,4 +143,4 @@ class links(commands.Cog):
 
 
 def setup(client):
-    client.add_cog(links(client))
+    client.add_cog(Links(client))
