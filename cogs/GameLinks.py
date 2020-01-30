@@ -19,13 +19,15 @@ class GameLinks(commands.Cog):
     async def lol_info(self, ctx, gm, *, args):
         if gm.lower() == 'sr':
             if args == 'PCM_Teams':
-                link = '\n**PCM Teams:**\n__Varsity Team__\n*Full Team:* https://na.op.gg/summoner/userName='
+                link = '\n**PCM Teams:**\n__Varsity Team__\n*Full Team:* <https://na.op.gg/summoner/userName='
                 link = link + 'pascho%2CPlasticHoipolloi%2Ctachibanakanade%2Cmanabird%2Cdarquesse%2Cnattyp%2Chexsise%2'
-                link = link + 'Coshawatt%2Ctrendy%2Cyilililili\n*Team 1:* <https://na.op.gg/multi/query=oshawatt%'
+                link = link + 'Coshawatt%2Ctrendy%2Cyilililili>\n*Team 1:* <https://na.op.gg/multi/query=oshawatt%'
                 link = link + '2Chexsise%2Cdarquesse%2Ctrendy%2Cyilililili>\n*Team 2:* <https://na.op.gg/multi/'
-                link = link + 'query=pascho%2Cplastichoipolloi%2Ctachibanakanade%2Cmanabird%2Cnattyp>\n\n'
-                link = link + '__Cloud Team__\n<https://na.op.gg/multi/query=n%C3%B8timportant%2Cbungy%2Cwiggywonka%'
-                link = link + '2Cmighty93%2Cchetgeezus%2Clostpath>'
+                link = link + 'query=pascho%2Cplastichoipolloi%2Ctachibanakanade%2Cdeker%2Cnattyp>\n\n'
+                link = link + '__Cloud Team__\n<https://na.op.gg/multi/query=n%C3%B8timportant%2Cbungy%2'
+                link = link + 'Cwiggywonka%2Cmighty93%2Cchetgeezus%2Clostpath>\n\n  __Krugs Team__ '
+                link = link + '\n <https://na.op.gg/multi/query=danell%2Cjujusmischuster%2Cpicklestirf'
+                link = link + 'ry%2Cfilpinothug%2C%C3%B0acky>'
             elif "," in args:
                 link = 'https://na.op.gg/summoner/userName='
                 ign = args.split(', ')

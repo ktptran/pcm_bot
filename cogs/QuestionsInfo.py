@@ -47,7 +47,7 @@ class QuestionsInfo(commands.Cog):
     # Error for 8ball or add function when the question field is not inputted.
     # This then returns a message to the user entering in the command about what they need to put in
     @_8ball.error
-    async def add_error(self, ctx, error):
+    async def _8ball_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send('**Error:** You must write a question after the command. '
                            'It must start with a capital letter end with a \'?\'')
@@ -81,11 +81,10 @@ class QuestionsInfo(commands.Cog):
                 for line in f:
                     output += f'{line_count}. <{line[:-1]}> \n'
                     line_count += 1
-                    print(output)
                     if len(output) > 1600:
                         await ctx.send(output)
                         output = ''
-        elif file_name == 'forms':
+        elif file_name == 'info':
             output = '__Important documents containing information for Purple Caster Minions__\n'
             output += '**Staff Directory:** '
             output += '<https://docs.google.com/spreadsheets' \

@@ -9,7 +9,7 @@ gen_channel = 514612185578602532  # general of PCM discord
 class Mods(commands.Cog):
     def __init__(self, client):
         self.client = client
-        self.post_msg.start()
+        # self.post_msg.start()
 
     # When the cog is fully functioning, it runs this method.
     @commands.Cog.listener()
@@ -41,7 +41,7 @@ class Mods(commands.Cog):
                 file_obj.close()
                 await ctx.send(f'Inputted link: <{file_input}>.')
             else:
-                await ctx.send('**Error:** You did not input a link followed by a description. Please try again.')
+                await ctx.send('**Error:** You did not input a link.')
         elif file_name == 'forms':
             if file_input.startswith('https://') and '|' in file_input:
                 split_input = file_input.split(' | ')
@@ -71,14 +71,21 @@ class Mods(commands.Cog):
             else:
                 await ctx.send("**Error:** You must write a question. "
                                "It must start with a capital letter end with a \'?\'")
+        else:
+            await ctx.send('You must enter either of these three options:\n'
+                           '**file_name = climb** : %add climb <any_climbing_link>\n'
+                           '**file_name = questions** : %add questions <question with capital and ?>\n'
+                           '**file_name = forms** : %add forms <form_link> | <description>')
 
     # Error for 8ball or add function when the question field is not inputted.
     # This then returns a message to the user entering in the command about what they need to put in
     @add.error
     async def add_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send('**Error:** You must write a question after the command. '
-                           'It must start with a capital letter end with a \'?\'')
+            await ctx.send('You must enter either of these three options:\n'
+                           '**file_name = climb** : %add climb <any_climbing_link>\n'
+                           '**file_name = questions** : %add questions <question with capital and ?>\n'
+                           '**file_name = forms** : %add forms <form_link> | <description>')
 
     # Removes a specific index from the questions
     # Inputs:
@@ -135,7 +142,7 @@ class Mods(commands.Cog):
         length = len(lines) - 1
         if isinstance(error, commands.BadArgument) or isinstance(error, commands.MissingRequiredArgument):
             await ctx.send(f'**Error:** You must enter in a numeric value from 0-{length}')
-        elif isinstance(error, self.commands.indexError):
+        elif isinstance(error, commands.indexError):
             await ctx.send(f'**Error:** You chose a non-existent question. Choose something within 0-{length}.')
         else:
             print(error)
@@ -143,7 +150,8 @@ class Mods(commands.Cog):
     # Prints out a question every 24 hours from when it was initialized.
     @tasks.loop(hours=24)
     async def post_msg(self):
-        channel = self.client.get_channel(int(gen_channel))
+        client = self.client
+        channel = client.get_channel(int(gen_channel))
         lines = open('./cogs/questions.txt').read().splitlines()
         quest = random.choice(lines)
         await channel.send(f'Question of the day: {quest}')
@@ -209,9 +217,6 @@ class Mods(commands.Cog):
         if role:  # If get could find the role
             await ctx.add_role(ctx.message.author, role)
 
-    # TODO: Add a function for when the user enters and print out rules for them to see.
-    # TODO: Add a command for when they emoji use an emoji, they receive a certain category
-    # TODO: Add a welcome notification to the users
 
 def setup(client):
     client.add_cog(Mods(client))
