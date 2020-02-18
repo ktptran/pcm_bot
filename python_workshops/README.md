@@ -6,6 +6,8 @@ The first workshop we hosted was the discord bots workshops. This was a three we
 
 <b>Goal:</b> The goal for this workshop is to educate participants with the skills needed to continue developing the discord bots following the workshops.
 
+![Discord Bot Workshop](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/discord_bots/Discord%20Python%20Workshop%20Cover%20Photo.png)
+
 
 ## Introduction to Python Workshop
 Following the discord bot workshop, we are now hosting a full introductions to Python course. This course will walk participants through the basic functionalities of Python and how it is viewed within the programming world. Unlike the discord bot workshop, all documentation of what we covered in the workshops will be done through Github. 
