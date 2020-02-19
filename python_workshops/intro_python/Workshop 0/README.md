@@ -84,6 +84,38 @@ Some tips when writing these programs:
 2. Write down the errors you make. Writing down the errors will make you more aware of your mistakes and it will decrease the chances of you making that error in the future.
 3. Put a comment above every function as you are starting off. This will allow you to understand what your program is doing altogether.
 
+### Running Python Programs
+To run a Python program, there are two ways to do it. One is through the terminal, the other is through PyCharm, your IDE.
+
+#### Terminal
+1. Open up Atom and save a file as 'test.py'. Save it to a place where you will remember. 
+2. Within the document, type print('Hello World!') on the first line. 
+3. Save the document.
+4. Navigate to your terminal.
+* For Windows: go to your windows search bar and type cmd to get to your command prompt. Press enter.
+* For Mac OSX: press command + space, a search bar will open, where you will then type 'terminal'. Press enter.
+
+5. Navigate to the directory your test.py file is saved in by using ls (shows what is in your folder), then cd. 
+* For example, if my test.py's file path was C:/Documents/projects/test.py, I would use the following commands:
+  1. cd Documents
+  2. cd projects
+
+6. Run the following command: 'python3 test.py'. This will run your python file and print out "Hello World!".
+
+You can also enter in the command: 'python3' or 'python' to run Python within your terminal.
+
+#### PyCharm
+1. Open up PyCharm and "Create a new Project". 
+2. Save it to any location using Pure Python.
+3. Create a new Python file by right clicking the directory window on the left, New -> Python File.
+4. Name the file 'test.py'.
+5. Type "print('Hello World!')"
+6. In the upper right hand corner click "Add configuration"
+7. Click the "+" symbol followed by Python
+8. Under Python interpreter, make sure it reads Python 3.8 (or something similar). For script path, click the folder icon and then select the 'test.py' file you have just created.
+9. Click open and then OK.
+10. Click the play button in the right hand corner and the program will run.
+
 ### Exercises
 These exercises are adjusted exercises from Zed A. Shaw's Learn Python 3 The Hard Way book. This is how I initially learned Python and it goes more indepth with all of the concepts. If you are interested in learning Python at a faster pace, I highly suggest buying or renting this book from him as his problems build your fundamentals as a computer scientist.
 
