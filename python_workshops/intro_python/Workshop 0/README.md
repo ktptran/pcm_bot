@@ -88,22 +88,27 @@ Some tips when writing these programs:
 These exercises are adjusted exercises from Zed A. Shaw's Learn Python 3 The Hard Way book. This is how I initially learned Python and it goes more indepth with all of the concepts. If you are interested in learning Python at a faster pace, I highly suggest buying or renting this book from him as his problems build your fundamentals as a computer scientist.
 
 <b>Exercise 1:</b> This exercise introduces you to the basics of programming using print statements.
+![Exercise 1](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%200/Exercise%201.png)
 
 Takeaways: Notice how you can use the other quotations depending on which quotation marks you choose for your print statement.
 
 <b>Exercise 2:</b> This exercises introduces you to comments in Python and how we can add additional notes.
+![Exercise 2](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%200/Exercise%202.png)
 
 Takeaways: The # symbol is very vital through all code to write down information.
 
 <b>Exercise 3:</b> This exercise introduces you to adding integers and equations to your print statements.
+![Exercise 3](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%200/Exercise%203.png)
 
 Takeaways: You can do operations within print statements.
 
 <b>Exercise 4:</b> This exercise introduces you to defining variables and manipulating them to use in print statements.
+![Exercise 4](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%200/Exercise%204.png)
 
 Takeaways: To store information, you can use variables.
 
 <b>Exercise 5:</b> This exercise introduces you to using f strings to concatenate variables into your print statements.
+![Exercise 5](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%200/Exercise%205.png)
 
 Takeaways: F strings are one way to incorporate variables into your print statements.
 
