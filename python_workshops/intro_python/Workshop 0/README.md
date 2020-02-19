@@ -158,4 +158,4 @@ To end off this workshop, we will be having a quiz to test your knowledge: <http
 ## Ending
 Thank you everyone for partaking in this workshop. This is still a growing workshop series and we plan to bring it back for a full course continuing off this one next quarter. Any feedback is welcomed for where to improve and when to schedule our workshop to make sure all of you are involved. Thanks again, and best of luck on your upcoming exams!
 
-Final form: <https://forms.gle/CkjrS7YdTKVv7fqh7>
+Feedback form: <https://forms.gle/CkjrS7YdTKVv7fqh7>
