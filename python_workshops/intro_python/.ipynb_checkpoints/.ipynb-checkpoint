@@ -1,0 +1,314 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Introduction"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Welcome\n",
+    "Welcome to the Python Programming course hosted by Purple Caster Minions and HUB Games!\n",
+    "\n",
+    "__Overview__ <br>\n",
+    "Through this course we will be covering the basics of python, how to use Python's Pandas package, and how to get your hands dirty with Riot Games API.\n",
+    "\n",
+    "__Course Content__ <br>\n",
+    "1) Week 1 (April 6th): Basic Types <br>\n",
+    "2) Week 2 (April 13th): Data Structures <br>\n",
+    "3) Week 3 (April 20th): Statements <br>\n",
+    "4) Week 4 (April 27th): Review <br>\n",
+    "5) Week 5 (May 4th): Pandas <br>\n",
+    "6) Week 6 (May 11th): Riot Games API <br>\n",
+    "7) Week 7 (May 18th): Summary <br>\n",
+    "\n",
+    "__What we won't be covering__ <br>\n",
+    "1) Object oriented programming (Inheritance, classes, etc.) <br>\n",
+    "2) Other packages such as NumPy and Pyplot <br>\n",
+    "3) Working with files <br>\n",
+    "4) ... <br>\n",
+    "\n",
+    "__Setup__ <br>\n",
+    "For those participating in this for the first time, you can find the setup of our programs in workshop 0: <br>\n",
+    "https://github.com/ktptran/pcm_functions/tree/master/python_workshops/intro_python/Workshop%200 <br>\n",
+    "\n",
+    "__How the course will go__ <br>\n",
+    "1) Walkthrough of the content for that week through lecture <br>\n",
+    "2) Questions & Answer at different section <br>\n",
+    "3) GitHub practice problems <br>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## About the Instructor\n",
+    "__General__ <br>\n",
+    "* Junior studying Applied Computational Math Science (ACMS) <br>\n",
+    "* Coding in Python for ~1.5 year now <br>\n",
+    "* Other programming knowledge: SQL, Java & R <br>\n",
+    "* Focus: Data Science <br\n",
+    "\n",
+    "__Python Projects & Competitions__  <br>\n",
+    "1) Hall Health Analysis (Pandas & NumPy) <br>\n",
+    "2) Chatbot within Discord (Discord API) <br>\n",
+    "3) Medical Device Research (Pandas & NumPy) <br>\n",
+    "4) Riot Games Information Extraction (requests) <br>\n",
+    "5) DubsTech Hackathon (Pandas & Numpy) - First in Data Insight <br>\n",
+    "6) Website Development (Django) <br>\n",
+    "\n",
+    "__More information__ <br>\n",
+    "Github: https://github.com/ktptran <br>\n",
+    "LinkedIn: https://www.linkedin.com/in/ktptran/"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Lecture Overview\n",
+    "1) Comments <br>\n",
+    "2) Numbers, Math, and Booleans <br>\n",
+    "3) Variables <br>\n",
+    "4) Strings <br>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Comments\n",
+    "Comments are essential to programming. <br>\n",
+    "* They allow you to leave notes <br>\n",
+    "* Disable parts of your program temporarily <br> <br>\n",
+    "\n",
+    "Within Python the comment symbol is '#' (called either a octothorpe or pound character)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Any kind of code is here.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# A comment is used to read a program later. Anything after the # is ignored by Python\n",
+    "\n",
+    "print(\"Any kind of code is here.\") # and anything after the comment is ignored."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# You can also use a comment to \"disable\" or take out code:\n",
+    "# print(\"This will not run anymore.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "But this will run.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"But this will run.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Numbers, Math, and Boolean\n",
+    "All programming languages have some kind of way to do numbers and math.\n",
+    "\n",
+    "Within Python, these are the math symbols: <br>\n",
+    "* '+': plus (addition) <br>\n",
+    "* '-': minus (subtraction) <br>\n",
+    "* '/': slash (division) <br>\n",
+    "* '*': asterisk (multiplication) <br>\n",
+    "* '%': percent (modulus) <br>\n",
+    "* '<': less-than <br>\n",
+    "* '>': greater-than <br>\n",
+    "* '<=': less-than-equal <br>\n",
+    "* '>=': greater-than-equal <br>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Of all of these symbols, the one that is uncommon is the % (modulus)\n",
+    "# What does this do?\n",
+    "\n",
+    "# The modulus takes the remainder after doing division.\n",
+    "# As an example, say we had 13 / 2 = (12 + 1) / 2 = 12 / 2 + 1 / 2  = 6.5\n",
+    "# If we did 13 % 2, then we would have 1.\n",
+    "\n",
+    "# Another way to view it is, \"X divided by Y with J remaining\".\n",
+    "# For example, \"20 divided by 6 with 2 remaining\". The result of % is J, or the remainder."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n",
+      "-1\n",
+      "2.0\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Within the chat, state what you think will be printed out.\n",
+    "print(3 + 5)\n",
+    "print(4 - 5)\n",
+    "print(4 / 2)\n",
+    "print(5 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'true' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-12-53528e4a799c>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;31m# Within Python, True or False must be capitalized.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;31m# e.g. true or false will not work.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0mtrue\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m \u001b[0mfalse\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'true' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "# For <, >, <=, and >= this will all be used to classify either True or False\n",
+    "True\n",
+    "False\n",
+    "# Within Python, True or False must be capitalized. \n",
+    "# e.g. true or false will not work.\n",
+    "true\n",
+    "false"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Within the chat, state what you think will be printed out.\n",
+    "print(3 + 2 < 5 - 7)\n",
+    "print(5 > -2)\n",
+    "print(3 % 2 + 1 > 2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "__Order of Operations__\n",
+    "Similar to PEMDAS = Paranetheses Exponents Multiplication Division Addition Subtraction.\n",
+    "\n",
+    "Python follows PE(M&D)(A&S) where multiplication and division & addition and subtraction are treated the same for level."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Variables\n",
+    "Variables are used to store information that will continually be used throughout your program. This way, you don't have to keep on copy and pasting values in different places and can instead have one value."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kevin Tran is 21 years old.\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_name = 'Kevin Tran'\n",
+    "my_age = 21\n",
+    "print(my_name, \"is\", my_age, \"years old.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Strings\n",
+    "Look at exercise 6"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
