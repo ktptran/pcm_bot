@@ -1,6 +1,8 @@
 # Workshop One: Primitive Types
 Lecture: https://docs.google.com/presentation/d/1si94QRh5QN3TwQtCO2dm8xZCMBS-07Dm08hpV95MhmA/edit?usp=sharing
 
+Recording: https://drive.google.com/open?id=1ZIvdvQI3wBkEYoff-JvulAKWaPFSTRRq
+
 Throughout this lecture, we talk about the primitive types, comments, and variables
 to develop the basic building blocks of building a program!
 
