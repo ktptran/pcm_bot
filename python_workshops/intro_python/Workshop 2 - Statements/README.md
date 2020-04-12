@@ -60,6 +60,7 @@ While loops repeat a block of code every time the given statement is true. You c
 
 ## Functions
 Functions are ways to save a piece of code you used in one part of your program and save it to use at another time. This way, you can prevent redundancy within your program.
+![Functions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Example%20Pictures/Functions.png)
 
 ## Examples of using course material
 Within these two examples, you'll see example situations we can use the course material covered.
