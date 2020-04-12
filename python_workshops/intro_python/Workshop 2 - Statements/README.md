@@ -3,9 +3,9 @@ Footnote: We have decided to swap week 2 and week 3 content. So, we will be cove
 
 Having these tools will help you make beginner level programs to give you more tools to program on your own.
 
-Lecture:
+Lecture: https://docs.google.com/presentation/d/1Hqs3p0iCXdp98B3oYCCNKF-FEJcPWq6qQZpkO9JNYvo/edit#slide=id.g8347ba00cb_0_333
 
-Recording: https://drive.google.com/open?id=1ZIvdvQI3wBkEYoff-JvulAKWaPFSTRRq
+Recording:
 
 # Announcements
 1. Github repositories will be released at 12:15 on Monday. Repositories will contain indepth information about the concepts.
