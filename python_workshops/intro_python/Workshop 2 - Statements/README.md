@@ -63,7 +63,8 @@ Functions are ways to save a piece of code you used in one part of your program 
 ![Functions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Example%20Pictures/Functions.png)
 
 ## Examples of using course material
-Within these two examples, you'll see example situations we can use the course material covered.
+Within these two examples, you'll see example situations where we can use both statements and basic types to make programs.
+
 ![Python Example One](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Python%20Combination%20Example%201.ipynb)
 
 ![League of Legends Python Example](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Python%20Combination%20Example%202.ipynb)
@@ -76,4 +77,4 @@ Within these two examples, you'll see example situations we can use the course m
 4. Write a Python program to print the alphabet pattern 'D'.
 5. Write a Python program to print alphabet pattern 'E'.
 
-All programs can be programmed in multiple ways. Solutions can be found in the practice problem solutions ipynb file: https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Week%202%20Practice%20Problem%20Solutions.ipynb
+All programs can be programmed in multiple ways. ![Solutions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Week%202%20Practice%20Problem%20Solutions.ipynb)
