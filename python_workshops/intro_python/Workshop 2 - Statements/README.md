@@ -5,7 +5,7 @@ Having these tools will help you make beginner level programs to give you more t
 
 Lecture: https://docs.google.com/presentation/d/1Hqs3p0iCXdp98B3oYCCNKF-FEJcPWq6qQZpkO9JNYvo/edit#slide=id.g8347ba00cb_0_333
 
-Recording: Uploading soon.
+Recording: https://drive.google.com/drive/u/1/folders/1543fqIZM_SifdfLDSi194oK1yGGSGqsq
 
 ## Announcements
 1. Github repositories will be released Monday morning. Lectures will contain indepth information building on the github material.
