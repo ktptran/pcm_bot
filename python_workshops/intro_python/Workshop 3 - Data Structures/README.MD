@@ -4,8 +4,6 @@ Lecture: https://docs.google.com/presentation/d/1JbPlmeAEeFPsQqao-LG6mqbP5HfuoKr
 Recording: Uploading soon.
 
 
-
-
 # Lecture Concepts
 Today we will be covering lists, tuples, sets, and dictionaries. These are data structures to allow you to
 sort your data.
@@ -56,4 +54,4 @@ json.dumps(r1)
 r1["entries"][1]
 ```
 
-All programs can be programmed in multiple ways. ![Solutions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%202%20-%20Statements/Week%202%20Practice%20Problem%20Solutions.ipynb)
+All programs can be programmed in multiple ways. ![Solutions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%203%20-%20Data%20Structures/Practice%20Problems.ipynb)
