@@ -1,7 +1,7 @@
 # Python Course - Week Three: Data Structures
 Lecture: https://docs.google.com/presentation/d/1JbPlmeAEeFPsQqao-LG6mqbP5HfuoKrm5BwgaKsLLjU/edit#slide=id.g83d258b0b1_0_54
 
-Recording: Uploading soon.
+Recording: https://drive.google.com/file/d/1q50dHZTMfdjgMwnK9oODyXnNV-CQf7Y6/view?usp=sharing
 
 
 # Lecture Concepts
