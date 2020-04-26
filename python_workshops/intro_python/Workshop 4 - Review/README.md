@@ -53,4 +53,4 @@ Expected output = True
 # Practice problems
 
 
-All programs can be solved in multiple ways. ![Solutions]()
+All programs can be solved in multiple ways. ![Solutions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%204%20-%20Review/Solutions%20to%20Practice%20Problems.ipynb)
