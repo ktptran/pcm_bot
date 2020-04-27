@@ -50,7 +50,5 @@ Expected Output:
 10. Check if all items in the following tuple are the same: tuple1 = {45, 45, 45, 45}
 Expected output = True
 
-# Practice problems
-
-
+## Solutions
 All programs can be solved in multiple ways. ![Solutions](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%204%20-%20Review/Solutions%20to%20Practice%20Problems.ipynb)
