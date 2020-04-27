@@ -1,7 +1,7 @@
 # Python Course - Week Four: Review
 Lecture: https://docs.google.com/presentation/d/1N8ItbP1EL8MmjFq3Axb3THyWEKwss5hkvfdUFTqPdZs/edit#slide=id.p
 
-Recording: Released after lecture
+Recording: https://drive.google.com/open?id=1hY7Npq8-wr6U7PI8aj4Z5DTv2h4SiWLP
 
 
 ## Lecture Concepts
