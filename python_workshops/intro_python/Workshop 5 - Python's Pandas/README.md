@@ -6,7 +6,7 @@ Recording: Released after lecture
 
 ## Lecture Concepts
 We are covering Python's Pandas library today to look at how to work with large datasets.
-All of the information covered can be found in the lecture above and the .ipynb file.
+All of the information covered can be found in the lecture above and the ![.ipynb file](https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%205%20-%20Python's%20Pandas/Workshop%205.ipynb).
 
 Many Python users will predominate to jupyter notebook for data science whereas for programs, we would
 use PyCharm.
