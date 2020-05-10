@@ -17,4 +17,4 @@ We'll be using Jupyter notebook mainly to work with the data. We can then transl
 3. How would you access information from the Riot Games API in Python?
 4. Explore what information you want to work with in the API and see what you can create!
 
-For more information or any questions, feel free to come stop by office hours at discord.gg/rHKN2sF on Wednesday and Friday from 3-4pm.
+For more information or any questions, feel free to come stop by office hours at https://discord.gg/rHKN2sF on Wednesday and Friday from 3-4pm.
