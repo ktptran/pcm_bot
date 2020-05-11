@@ -1,7 +1,7 @@
 # Python Course - Week Four: Review
 Lecture: https://docs.google.com/presentation/d/1CfmOA-AZOORw0ikRjA1BFGhfPkuOp0AJQXA-bbjn1ds/edit?usp=sharing
 
-Recording: Released after lecture
+Recording: https://washington.zoom.us/rec/play/uJB4IrisrT43TtyTuASDVvV-W9W0eqms0Cccr6ZYnxu3U3kGYFHyN-MaZLab1w6lz2I5RenUTQLOVT7w?continueMode=true
 
 ## Lecture Concepts
 We are covering Riot Games' API today to learn how to extract information from different programming
