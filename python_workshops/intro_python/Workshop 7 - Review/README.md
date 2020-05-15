@@ -1,4 +1,4 @@
-# Python Course - Week Four: Review
+# Python Course - Week Seven: Review
 Lecture: https://docs.google.com/presentation/d/1HFX9pwAnMdQGO-AOG3FGuZvUAhhec_qkiDAIEbJgyAc/edit?usp=sharing
 
 Recording: Released after lecture
@@ -10,7 +10,7 @@ For data science, we'll use Jupyter Notebook through Anaconda Navigator or colab
 Typically in data science, you'll be conducting many experiments where you're faced with open ended
 questions. We'll then use this information to build insight into other factors we have control of.
 
-Code from lecture:
+Code from lecture: https://github.com/ktptran/pcm_functions/blob/master/python_workshops/intro_python/Workshop%207%20-%20Review/Lecture%20Code.ipynb
 
 ## Practice Problems
 This practice problem will conclude with how you can conduct your own experiments
