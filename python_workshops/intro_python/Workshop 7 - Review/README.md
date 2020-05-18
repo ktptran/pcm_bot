@@ -1,7 +1,7 @@
 # Python Course - Week Seven: Conclusion!
 Lecture: https://docs.google.com/presentation/d/1HFX9pwAnMdQGO-AOG3FGuZvUAhhec_qkiDAIEbJgyAc/edit?usp=sharing
 
-Recording: Released after lecture
+Recording: https://washington.zoom.us/rec/share/7NNbIJWo9UpIRI3X-HPSWpMxPafLeaa80yNP-vdfz0ZOn2E8KoVUOw0v3JsCI9ak
 
 ## Lecture Concepts
 Today, we are conducting an experiment using everything we have learned within the Python course.
