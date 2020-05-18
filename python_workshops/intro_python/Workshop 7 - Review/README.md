@@ -1,4 +1,4 @@
-# Python Course - Week Seven: Review
+# Python Course - Week Seven: Conclusion!
 Lecture: https://docs.google.com/presentation/d/1HFX9pwAnMdQGO-AOG3FGuZvUAhhec_qkiDAIEbJgyAc/edit?usp=sharing
 
 Recording: Released after lecture
