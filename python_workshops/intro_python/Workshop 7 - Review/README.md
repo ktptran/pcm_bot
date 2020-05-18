@@ -18,6 +18,3 @@ This practice problem will conclude with how you can conduct your own experiment
 2. Can you find any information about it online like an API?
 3. What are you wondering about it that you could use data to investigate?
 4. Conduct your investigation and good luck!
-
-For more information or any questions, feel free to come stop by office hours at
-https://discord.gg/rHKN2sF on Wednesday and Friday from 3-4pm.
